@@ -18,7 +18,9 @@ public class CacheMap {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                System.out.println("try cleaning...");
+                for (String key : store.keySet()) {
+                    System.out.println(store.get(key));
+                }
             }
         }, 1000, period);
     }
