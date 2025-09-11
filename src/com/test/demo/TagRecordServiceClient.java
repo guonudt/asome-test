@@ -1,3 +1,5 @@
+package com.test.demo;
+
 public class TagRecordServiceClient {
 
     private static CacheMap stringTagRecordDoMap = new CacheMap();

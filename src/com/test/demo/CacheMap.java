@@ -1,9 +1,9 @@
-import java.util.Collection;
+package com.test.demo;
+
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
 public class CacheMap {
     private Map<String,String> store = new ConcurrentHashMap<>();
@@ -41,7 +41,7 @@ public class CacheMap {
 
     @Override
     public String toString() {
-        return "CacheMap{" +
+        return "com.test.demo.CacheMap{" +
                 "store=" + store +
                 '}';
     }
