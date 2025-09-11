@@ -17,9 +17,9 @@ public class TagRecordServiceClient {
         if (code == null) {
             return null;
         }
-        CacheMap cacheMap = new CacheMap();
         String tagRecord  = stringTagRecordDoMap.get(code);
         if(tagRecord != null){
+            CacheMap cacheMap = new CacheMap();
             cacheMap.put(code, tagRecord);
             return cacheMap;
         }
