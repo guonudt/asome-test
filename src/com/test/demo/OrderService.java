@@ -9,9 +9,9 @@ public class OrderService {
      */
     public void createNewOrder() {
         String orderId = "ORD-" + String.format("%06d", orderCounter++);
-        new OrderStatusMonitor(orderId); // 每次都创建新的监控器和 Timer
+        System.out.println("创建订单" + orderId);
         try {
-            Thread.sleep(3000); // 模拟下单间隔
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
