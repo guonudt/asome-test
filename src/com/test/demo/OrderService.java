@@ -10,6 +10,7 @@ public class OrderService {
     public void createNewOrder() {
         String orderId = "ORD-" + String.format("%06d", orderCounter++);
         System.out.println("创建订单" + orderId);
+        new OrderStatusMonitor(orderId);
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
